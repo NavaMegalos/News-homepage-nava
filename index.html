@@ -12,80 +12,89 @@
       href="./assets/images/favicon-32x32.png"
     />
 
+    <link rel="stylesheet" href="./style.css">
     <title>Frontend Mentor | News homepage</title>
 
     </style>
   </head>
   <body>
-    <header class="app__header">
+    <header class="app__header flex">
       <img class="app__header-logo" src="./assets/images/logo.svg" alt="logo app" />
 
-      <ul class="nav">
-        <li class="nav-item">Home</li>
-        <li class="nav-item">New</li>
-        <li class="nav-item">Popular</li>
-        <li class="nav-item">Trending</li>
-        <li class="nav-item">Categories</li>
-      </ul>
+      <button class="btn-menu">
+        <img src="./assets/images/icon-menu.svg" width="40" height="17" alt="icon open menu">
+      </button>
+      <div class="menu bg-off-white">
+        <img class="close-menu" src="./assets/images/icon-menu-close.svg" width="30" height="30" alt="icon close menu">
+        <ul class="nav flex color-very-blue">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">New</li>
+          <li class="nav-item">Popular</li>
+          <li class="nav-item">Trending</li>
+          <li class="nav-item">Categories</li>
+        </ul>
+      </div>
     </header>
 
     <main class="app__main">
       <section class="app__principal">
-        <img class="app__principal-img" src="./assets/images/image-web-3-desktop.jpg" alt="" />
-        <h1 class="app__principal-title">The Bright Future of Web 3.0?</h1>
+        <img class="app__principal-img" width="375" height="300" src="./assets/images/image-web-3-mobile.jpg" alt="" />
+        <h1 class="app__principal-title color-very-blue">The Bright Future of Web 3.0?</h1>
         <div class="app__principal-info">
           <p class="app__principal-description">
             We dive into the next evolution of the web that claims to put the
             power of the platforms back into the hands of the people. But is it
             really fulfilling its promise?
           </p>
-          <button class="btn">Read more</button>
+          <button class="btn color-off-white bg-red">Read more</button>
         </div>
       </section>
-      <aside class="app__aside">
-        <h2 class="app__aside-title">New</h2>
-        <div class="app__aside-item">
-          <h3 class="app__aside-item-title">Hydrogen VS Electric Cars</h3>
-          <p class="app__aside-item-description">Will hydrogen-fueled cars ever catch up to EVs?</p>
+      <aside class="app__aside bg-very-blue color-off-white flex">
+        <h2 class="app__aside-title color-orange">New</h2>
+        <div class="app__aside-item flex">
+          <h3 class="app__aside-item-title color-off-white">Hydrogen VS Electric Cars</h3>
+          <p class="app__aside-item-description color-grayish-blue">Will hydrogen-fueled cars ever catch up to EVs?</p>
         </div>
-        <div class="app__aside-item">
-          <h3 class="app__aside-item-title">The Downsides of AI Artistry</h3>
-          <p class="app__aside-item-description">
+        <hr>
+        <div class="app__aside-item flex">
+          <h3 class="app__aside-item-title color-off-white">The Downsides of AI Artistry</h3>
+          <p class="app__aside-item-description color-grayish-blue">
             What are the possible adverse effects of on-demand AI image
             generation?
           </p>
         </div>
-        <div class="app__aside-item">
-          <h3 class="app__aside-item-title">Is VC Funding Drying Up?</h3>
-          <p class="app__aside-item-description">
+        <hr>
+        <div class="app__aside-item flex">
+          <h3 class="app__aside-item-title color-off-white">Is VC Funding Drying Up?</h3>
+          <p class="app__aside-item-description color-grayish-blue">
             Private funding by VC firms is down 50% YOY. We take a look at what
             that means.
           </p>
         </div>
       </aside>
-      <section class="app__top-new">
-        <div class="app__top-new-item">
-          <img src="" alt="" />
-          <div>
-            <span>01</span>
-            <h3>Reviving Retro PCs</h3>
-            <p>What happens when old PCs are given modern upgrades?</p>
+      <section class="app__top-new flex">
+        <div class="app__top-new-item flex">
+          <img src="./assets/images/image-retro-pcs.jpg" width="125" height="130" alt="retro pcs" />
+          <div class="app__top-new-item-info-container flex">
+            <span class="number color-grayish-blue">01</span>
+            <h3 class="app__top-title color-very-blue">Reviving Retro PCs</h3>
+            <p class="app__top-description color-dark-blue">What happens when old PCs are given modern upgrades?</p>
           </div>
         </div>
-        <div class="app__top-new-item">
-          <img src="" alt="" />
-          <div>
-            <span>02</span>
-            <h3>Top 10 Laptops of 2022</h3>
-            <p>Our best picks for various needs and budgets.</p>
+        <div class="app__top-new-item flex">
+          <img src="./assets/images/image-top-laptops.jpg" width="125" height="130" alt="top laptops" />
+          <div class="app__top-new-item-info-container flex">
+            <span class="number color-grayish-blue">02</span>
+            <h3 class="app__top-title color-very-blue">Top 10 Laptops of 2022</h3>
+            <p class="app__top-description color-dark-blue">Our best picks for various needs and budgets.</p>
           </div>
         </div>
-        <div class="app__top-new-item">
-          <img src="" alt="" />
-          <div>
-            <h3>The Growth of Gaming</h3>
-            <span>03</span>
-            <p>How the pandemic has sparked fresh opportunities.</p>
+        <div class="app__top-new-item flex">
+          <img src="./assets/images/image-gaming-growth.jpg" width="125" height="130" alt="gaming growth" />
+          <div class="app__top-new-item-info-container flex">
+            <span class="number color-grayish-blue">03</span>
+            <h3 class="app__top-title color-very-blue">The Growth of Gaming</h3>
+            <p class="app__top-description color-dark-blue">How the pandemic has sparked fresh opportunities.</p>
           </div>
         </div>
       </section>
