@@ -179,12 +179,16 @@ body {
   right: 20px;
 }
 
+.nav-desktop {
+  display: none;
+}
+
 .nav {
   list-style: none;
   flex-direction: column;
   gap: 5px;
   margin-left: 25px;
-  font-weight: var(--fw-800);
+  font-weight: var(--fw-400);
 }
 
 .nav-item {
@@ -197,6 +201,9 @@ body {
 }
 
 /* ******* */
+.app__main {
+  flex-direction: column;
+}
 
 .app__principal {
   padding: 0 .8rem;
@@ -206,6 +213,7 @@ body {
   font-size: var(--fs-heading-xl);
   font-style: normal;
   font-weight: var(--fw-800);
+  justify-content: center;
   line-height: 40px;
   margin: .8rem 0;
 }
@@ -317,3 +325,82 @@ body {
   font-weight: var(--fw-400);
   line-height: 26px;
 }
+
+@media (min-width: 768px) {
+  .app__principal {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .app__aside {
+  }
+
+  .app__top-new {
+    flex-direction: row;
+  }
+
+  .app__top-new > *{
+    flex: 1;
+  }
+}
+
+@media (min-width: 980px) {
+
+  .app__main {
+    padding: .8rem;
+    flex-direction: row;
+    gap: 25px;
+  }
+
+  .app__principal{
+    width: 65%;
+    flex-direction: row;
+    text-align: start;
+    gap: 15px;
+  }
+
+  .app__principal-img {
+    content: url("./assets/images/image-web-3-desktop.jpg");
+    width: 100%;
+    height: auto;
+  }
+
+  .app__principal-title {
+    flex: .4;
+  }
+
+  .app__principal-info {
+    flex: .6;
+  }
+
+  .app__header {
+    padding: 2rem;
+  }
+
+  .btn-menu {
+    display: none;
+  }
+
+  .nav-desktop {
+    list-style: none;
+    flex-direction: row;
+    gap: 5px;
+    margin-left: 25px;
+    font-weight: var(--fw-400);
+    display: inherit;
+  }
+
+
+  .app__aside {
+    width: 30%;
+    margin: 0 .5rem;
+  }
+
+  .app__top-new {
+    margin: 6rem 0;
+    width: 100%;
+  }
+
+
+}
+
