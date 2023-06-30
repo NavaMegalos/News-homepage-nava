@@ -13,6 +13,7 @@
     />
 
     <link rel="stylesheet" href="./style.css">
+    <script src="./main.js" defer></script>
     <title>Frontend Mentor | News homepage</title>
 
     </style>
@@ -21,11 +22,13 @@
     <header class="app__header flex">
       <img class="app__header-logo" src="./assets/images/logo.svg" alt="logo app" />
 
-      <button class="btn-menu">
+      <button id="open" class="btn-menu">
         <img src="./assets/images/icon-menu.svg" width="40" height="17" alt="icon open menu">
       </button>
-      <div class="menu bg-off-white">
-        <img class="close-menu" src="./assets/images/icon-menu-close.svg" width="30" height="30" alt="icon close menu">
+      <div id="nav-menu" class="menu bg-off-white">
+        <button id="close">
+          <img class="close-menu" src="./assets/images/icon-menu-close.svg" width="30" height="30" alt="icon close menu">
+        </button>
         <ul class="nav flex color-very-blue">
           <li class="nav-item">Home</li>
           <li class="nav-item">New</li>
